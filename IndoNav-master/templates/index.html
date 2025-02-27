@@ -21,6 +21,12 @@
                 <button type="submit">Search</button>
             </form>
         </div>
+         <div class="path-container">
+            <h3>Path from Source to Destination:</h3>
+            <ul id="pathList">
+                <!-- Path will be displayed here dynamically -->
+            </ul>
+        </div>
         <div class="image-container">
             <div class="slider">
                 <img src="{{ url_for('static', filename='images/floor.png') }}" alt="Map Image 1">
@@ -30,12 +36,7 @@
             <button class="prev">&laquo;</button>
             <button class="next">&raquo;</button>
         </div>
-        <div class="path-container">
-            <h3>Path from Source to Destination:</h3>
-            <ul id="pathList">
-                <!-- Path will be displayed here dynamically -->
-            </ul>
-        </div>
+       
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
